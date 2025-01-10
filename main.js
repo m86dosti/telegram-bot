@@ -6,7 +6,6 @@ exports.handler = async (event) => {
         chat_id: event.body.message.chat.id,
         text: 'سلام.'
     };
-
     const options = {
         hostname: 'api.telegram.org',
         path: `/bot${token}/sendMessage`,
